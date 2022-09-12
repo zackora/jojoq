@@ -23,17 +23,11 @@ shuffle($question);
 </head>
 
 <body>
-    <h1>第１問</h1>
-    <h2><?php echo $title; ?></h2>
-    <form method="POST" action="answer.php">
-        <img src="images/joutarou.png" alt="3部の主人公" style="width:70%; height:50%;"><br>
-        <?php foreach($question as $value) { ?>
-        <input type="radio" name="question" value="<?php echo $value; ?>"><?php echo $value; ?><br>
-        <?php } ?>
-        <?php echo '<input type="hidden" name="answer" value="' . $answer .'">' ?>
-        <?php echo '<input type="hidden" name="mondai" value="1">' ?>
-        <input type="submit" value="決定">
-    </form>
+    <h1>クイズ</h1>
+    <h2>問題を解こう</h2>
+    <a href="3bu-1.php">
+        <input type="button" name="" value="開始">
+    </a>
 </body>
 
 </html>
